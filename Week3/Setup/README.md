@@ -1,0 +1,1 @@
+ I use the submit.sbatch bash file to simulate each MD steps
