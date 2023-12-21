@@ -1,0 +1,29 @@
+; NVE simulation
+integrator = md
+dt = 0.002 ; ps
+nsteps = 10000000 ; 500ps, 0.5 ns
+comm-grps = system
+;
+nstxout = 5
+;nstvout = 100
+nstfout = 0
+nstlog = 500
+nstenergy = 5
+nstxout-compressed = 5
+compressed-x-grps = system
+;pbc = xyz
+cutoff-scheme = Verlet
+verlet-buffer-tolerance = 5.0e-06 ; default is 5e-3, for NVE, use a small value
+coulombtype = PME
+rcoulomb = 1
+vdwtype = cut-off
+rvdw = 1
+DispCorr = EnerPres
+;
+Tcoupl = no
+;
+Pcoupl = no
+;
+constraints = hbonds
+;
+lincs_iter = 2 ; default is 1, for NVE, use 2.

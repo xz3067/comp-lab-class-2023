@@ -1,0 +1,521 @@
+                      :-) GROMACS - gmx grompp, 2016.5 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2016.5
+Executable:   /gpfsnyu/packages/gromacs/gnu/2016.5/bin/gmx
+Data prefix:  /gpfsnyu/packages/gromacs/gnu/2016.5
+Working dir:  /tmp/xz3067_7921015
+Command line:
+  gmx grompp -f min1.mdp -c choline_cl_urea.gro -p choline_cl_urea.top -o min1.tpr
+
+Setting the LD random seed to 456164174
+Generated 120 of the 120 non-bonded parameter combinations
+Generating 1-4 interactions: fudge = 0.5
+Generated 120 of the 120 1-4 parameter combinations
+Excluding 3 bonded neighbours molecule type 'CHOL'
+Excluding 3 bonded neighbours molecule type 'Cl'
+Excluding 3 bonded neighbours molecule type 'UREA'
+Removing all charge groups because cutoff-scheme=Verlet
+Number of degrees of freedom in T-Coupling group rest is 56997.00
+Estimate for the relative computational load of the PME mesh part: 0.17
+
+GROMACS reminds you: "If You Don't Like Cool Quotes Check Your GMXRC File" (Your Sysadmin)
+
+Analysing residue names:
+There are:  1500      Other residues
+There are:   500        Ion residues
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 48x48x48, spacing 0.119 0.119 0.119
+This run will generate roughly 444 Mb of data
+                      :-) GROMACS - gmx mdrun, 2016.5 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2016.5
+Executable:   /gpfsnyu/packages/gromacs/gnu/2016.5/bin/gmx
+Data prefix:  /gpfsnyu/packages/gromacs/gnu/2016.5
+Working dir:  /tmp/xz3067_7921015
+Command line:
+  gmx mdrun -pin on -ntmpi 1 -ntomp 28 -deffnm min1
+
+
+NOTE: Error occurred during GPU detection:
+      CUDA driver version is insufficient for CUDA runtime version
+      Can not use GPU acceleration, will fall back to CPU kernels.
+
+
+Running on 1 node with total 28 cores, 28 logical cores, 0 compatible GPUs
+Hardware detected:
+  CPU info:
+    Vendor: Intel
+    Brand:  Intel(R) Xeon(R) Gold 6132 CPU @ 2.60GHz
+    SIMD instructions most likely to fit this hardware: AVX_512
+    SIMD instructions selected at GROMACS compile time: AVX2_256
+
+  Hardware topology: Full, with devices
+
+Compiled SIMD instructions: AVX2_256, GROMACS could use AVX_512 on this machine, which is better.
+
+Reading file min1.tpr, VERSION 2016.5 (single precision)
+Using 1 MPI thread
+Using 28 OpenMP threads 
+
+
+NOTE: You requested 28 OpenMP threads, whereas we expect the optimum to be with more MPI ranks with 1 to 6 OpenMP threads.
+
+
+Steepest Descents:
+   Tolerance (Fmax)   =  1.00000e+01
+   Number of steps    =       200000
+
+writing lowest energy coordinates.
+
+Steepest Descents converged to Fmax < 10 in 8286 steps
+Potential Energy  = -1.2582741e+05
+Maximum force     =  9.7683363e+00 on atom 11760
+Norm of force     =  1.1601368e+00
+
+GROMACS reminds you: "Every electron is sacred." (Greg McMullan, on Cryo-EM detectors)
+
+                      :-) GROMACS - gmx grompp, 2016.5 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2016.5
+Executable:   /gpfsnyu/packages/gromacs/gnu/2016.5/bin/gmx
+Data prefix:  /gpfsnyu/packages/gromacs/gnu/2016.5
+Working dir:  /tmp/xz3067_7921015
+Command line:
+  gmx grompp -f min2.mdp -c min1.gro -p choline_cl_urea.top -o min2.tpr
+
+
+Back Off! I just backed up mdout.mdp to ./#mdout.mdp.1#
+Setting the LD random seed to -1454572866
+Generated 120 of the 120 non-bonded parameter combinations
+Generating 1-4 interactions: fudge = 0.5
+Generated 120 of the 120 1-4 parameter combinations
+Excluding 3 bonded neighbours molecule type 'CHOL'
+Excluding 3 bonded neighbours molecule type 'Cl'
+Excluding 3 bonded neighbours molecule type 'UREA'
+Removing all charge groups because cutoff-scheme=Verlet
+Number of degrees of freedom in T-Coupling group rest is 56997.00
+Estimate for the relative computational load of the PME mesh part: 0.17
+
+GROMACS reminds you: "Kick the Dog and You Will Die" (Magnapop)
+
+Analysing residue names:
+There are:  1500      Other residues
+There are:   500        Ion residues
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 48x48x48, spacing 0.119 0.119 0.119
+This run will generate roughly 223 Mb of data
+                      :-) GROMACS - gmx mdrun, 2016.5 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2016.5
+Executable:   /gpfsnyu/packages/gromacs/gnu/2016.5/bin/gmx
+Data prefix:  /gpfsnyu/packages/gromacs/gnu/2016.5
+Working dir:  /tmp/xz3067_7921015
+Command line:
+  gmx mdrun -pin on -ntmpi 1 -ntomp 28 -deffnm min2
+
+
+NOTE: Error occurred during GPU detection:
+      CUDA driver version is insufficient for CUDA runtime version
+      Can not use GPU acceleration, will fall back to CPU kernels.
+
+
+Running on 1 node with total 28 cores, 28 logical cores, 0 compatible GPUs
+Hardware detected:
+  CPU info:
+    Vendor: Intel
+    Brand:  Intel(R) Xeon(R) Gold 6132 CPU @ 2.60GHz
+    SIMD instructions most likely to fit this hardware: AVX_512
+    SIMD instructions selected at GROMACS compile time: AVX2_256
+
+  Hardware topology: Full, with devices
+
+Compiled SIMD instructions: AVX2_256, GROMACS could use AVX_512 on this machine, which is better.
+
+Reading file min2.tpr, VERSION 2016.5 (single precision)
+Using 1 MPI thread
+Using 28 OpenMP threads 
+
+
+NOTE: You requested 28 OpenMP threads, whereas we expect the optimum to be with more MPI ranks with 1 to 6 OpenMP threads.
+
+
+Steepest Descents:
+   Tolerance (Fmax)   =  1.00000e+01
+   Number of steps    =       100000
+
+writing lowest energy coordinates.
+
+Steepest Descents converged to Fmax < 10 in 69 steps
+Potential Energy  = -1.2582838e+05
+Maximum force     =  9.7960148e+00 on atom 11760
+Norm of force     =  1.7099450e+00
+
+GROMACS reminds you: "We're Gonna Hit You Harder" (Scoter)
+
+                      :-) GROMACS - gmx grompp, 2016.5 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2016.5
+Executable:   /gpfsnyu/packages/gromacs/gnu/2016.5/bin/gmx
+Data prefix:  /gpfsnyu/packages/gromacs/gnu/2016.5
+Working dir:  /tmp/xz3067_7921015
+Command line:
+  gmx grompp -f heat.mdp -c min2.gro -p choline_cl_urea.top -o heat.tpr
+
+
+Back Off! I just backed up mdout.mdp to ./#mdout.mdp.2#
+Setting the LD random seed to -1312992224
+Generated 120 of the 120 non-bonded parameter combinations
+Generating 1-4 interactions: fudge = 0.5
+Generated 120 of the 120 1-4 parameter combinations
+Excluding 3 bonded neighbours molecule type 'CHOL'
+Excluding 3 bonded neighbours molecule type 'Cl'
+Excluding 3 bonded neighbours molecule type 'UREA'
+Removing all charge groups because cutoff-scheme=Verlet
+Simulated annealing for group System: Single, 2 timepoints
+Time (ps)   Temperature (K)
+      0.0        0.0
+    200.0-     295.1
+Number of degrees of freedom in T-Coupling group System is 45997.00
+Estimate for the relative computational load of the PME mesh part: 0.18
+
+GROMACS reminds you: "Nada e organico, e tudo programado" (Pitty)
+
+turning H bonds into constraints...
+turning H bonds into constraints...
+turning H bonds into constraints...
+Analysing residue names:
+There are:  1500      Other residues
+There are:   500        Ion residues
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+Determining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 295.15 K
+Calculated rlist for 1x1 atom pair-list as 1.014 nm, buffer size 0.014 nm
+Set rlist, assuming 4x4 atom pair-list, to 1.000 nm, buffer size 0.000 nm
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 48x48x48, spacing 0.119 0.119 0.119
+This run will generate roughly 11 Mb of data
+                      :-) GROMACS - gmx mdrun, 2016.5 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2016.5
+Executable:   /gpfsnyu/packages/gromacs/gnu/2016.5/bin/gmx
+Data prefix:  /gpfsnyu/packages/gromacs/gnu/2016.5
+Working dir:  /tmp/xz3067_7921015
+Command line:
+  gmx mdrun -pin on -ntmpi 1 -ntomp 28 -deffnm heat
+
+
+NOTE: Error occurred during GPU detection:
+      CUDA driver version is insufficient for CUDA runtime version
+      Can not use GPU acceleration, will fall back to CPU kernels.
+
+
+Running on 1 node with total 28 cores, 28 logical cores, 0 compatible GPUs
+Hardware detected:
+  CPU info:
+    Vendor: Intel
+    Brand:  Intel(R) Xeon(R) Gold 6132 CPU @ 2.60GHz
+    SIMD instructions most likely to fit this hardware: AVX_512
+    SIMD instructions selected at GROMACS compile time: AVX2_256
+
+  Hardware topology: Full, with devices
+
+Compiled SIMD instructions: AVX2_256, GROMACS could use AVX_512 on this machine, which is better.
+
+Reading file heat.tpr, VERSION 2016.5 (single precision)
+Changing nstlist from 10 to 40, rlist from 1 to 1.016
+
+Using 1 MPI thread
+Using 28 OpenMP threads 
+
+
+NOTE: You requested 28 OpenMP threads, whereas we expect the optimum to be with more MPI ranks with 1 to 6 OpenMP threads.
+
+starting mdrun 'Neat CHOL Cl UREA'
+100000 steps,    200.0 ps.
+
+Writing final coordinates.
+
+               Core t (s)   Wall t (s)        (%)
+       Time:     3548.641      126.737     2800.0
+                 (ns/day)    (hour/ns)
+Performance:      136.347        0.176
+
+GROMACS reminds you: "Just a Minute While I Reinvent Myself" (Red Hot Chili Peppers)
+
+                      :-) GROMACS - gmx grompp, 2016.5 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2016.5
+Executable:   /gpfsnyu/packages/gromacs/gnu/2016.5/bin/gmx
+Data prefix:  /gpfsnyu/packages/gromacs/gnu/2016.5
+Working dir:  /tmp/xz3067_7921015
+Command line:
+  gmx grompp -f npt.mdp -c heat.gro -p choline_cl_urea.top -o npt.tpr
+
+
+Back Off! I just backed up mdout.mdp to ./#mdout.mdp.3#
+Setting the LD random seed to 2138858691
+Generated 120 of the 120 non-bonded parameter combinations
+Generating 1-4 interactions: fudge = 0.5
+Generated 120 of the 120 1-4 parameter combinations
+Excluding 3 bonded neighbours molecule type 'CHOL'
+Excluding 3 bonded neighbours molecule type 'Cl'
+Excluding 3 bonded neighbours molecule type 'UREA'
+Removing all charge groups because cutoff-scheme=Verlet
+Number of degrees of freedom in T-Coupling group System is 45997.00
+Estimate for the relative computational load of the PME mesh part: 0.18
+
+GROMACS reminds you: "I Can't Shake It" (Dinosaur Jr)
+
+turning H bonds into constraints...
+turning H bonds into constraints...
+turning H bonds into constraints...
+Analysing residue names:
+There are:  1500      Other residues
+There are:   500        Ion residues
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+Determining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 295.15 K
+Calculated rlist for 1x1 atom pair-list as 1.014 nm, buffer size 0.014 nm
+Set rlist, assuming 4x4 atom pair-list, to 1.000 nm, buffer size 0.000 nm
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 48x48x48, spacing 0.119 0.119 0.119
+This run will generate roughly 20 Mb of data
+                      :-) GROMACS - gmx mdrun, 2016.5 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2016.5
+Executable:   /gpfsnyu/packages/gromacs/gnu/2016.5/bin/gmx
+Data prefix:  /gpfsnyu/packages/gromacs/gnu/2016.5
+Working dir:  /tmp/xz3067_7921015
+Command line:
+  gmx mdrun -pin on -ntmpi 1 -ntomp 28 -deffnm npt
+
+
+NOTE: Error occurred during GPU detection:
+      CUDA driver version is insufficient for CUDA runtime version
+      Can not use GPU acceleration, will fall back to CPU kernels.
+
+
+Running on 1 node with total 28 cores, 28 logical cores, 0 compatible GPUs
+Hardware detected:
+  CPU info:
+    Vendor: Intel
+    Brand:  Intel(R) Xeon(R) Gold 6132 CPU @ 2.60GHz
+    SIMD instructions most likely to fit this hardware: AVX_512
+    SIMD instructions selected at GROMACS compile time: AVX2_256
+
+  Hardware topology: Full, with devices
+
+Compiled SIMD instructions: AVX2_256, GROMACS could use AVX_512 on this machine, which is better.
+
+Reading file npt.tpr, VERSION 2016.5 (single precision)
+Changing nstlist from 10 to 40, rlist from 1 to 1.016
+
+Using 1 MPI thread
+Using 28 OpenMP threads 
+
+
+NOTE: You requested 28 OpenMP threads, whereas we expect the optimum to be with more MPI ranks with 1 to 6 OpenMP threads.
+
+starting mdrun 'Neat CHOL Cl UREA'
+2000000 steps,   4000.0 ps.
+
+Writing final coordinates.
+
+               Core t (s)   Wall t (s)        (%)
+       Time:    71166.197     2541.650     2800.0
+                         42:21
+                 (ns/day)    (hour/ns)
+Performance:      135.975        0.177
+
+GROMACS reminds you: "You Look Better Upside Down" (Throwing Muses)
+

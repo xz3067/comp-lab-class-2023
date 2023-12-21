@@ -1,0 +1,155 @@
+                      :-) GROMACS - gmx grompp, 2016.5 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2016.5
+Executable:   /gpfsnyu/packages/gromacs/gnu/2016.5/bin/gmx
+Data prefix:  /gpfsnyu/packages/gromacs/gnu/2016.5
+Working dir:  /tmp/xz3067_7923174
+Command line:
+  gmx grompp -f nve.mdp -c nvt.gro -p choline_cl_urea.top -o nve.tpr
+
+
+NOTE 1 [file nve.mdp]:
+  Setting nstcalcenergy (100) equal to nstenergy (5)
+
+Setting the LD random seed to -1654788383
+Generated 120 of the 120 non-bonded parameter combinations
+Generating 1-4 interactions: fudge = 0.5
+Generated 120 of the 120 1-4 parameter combinations
+Excluding 3 bonded neighbours molecule type 'CHOL'
+Excluding 3 bonded neighbours molecule type 'Cl'
+Excluding 3 bonded neighbours molecule type 'UREA'
+Removing all charge groups because cutoff-scheme=Verlet
+Number of degrees of freedom in T-Coupling group rest is 45997.00
+
+NOTE 2 [file nve.mdp]:
+  NVE simulation: will use the initial temperature of 283.718 K for
+  determining the Verlet buffer size
+
+
+NOTE 3 [file nve.mdp]:
+  You are using a Verlet buffer tolerance of 5e-06 kJ/mol/ps for an NVE
+  simulation of length 20000 ps, which can give a final drift of 2%. For
+  conserving energy to 1% when using constraints, you might need to set
+  verlet-buffer-tolerance to 2.4e-06.
+
+Estimate for the relative computational load of the PME mesh part: 0.16
+
+NOTE 4 [file nve.mdp]:
+  This run will generate roughly 618321 Mb of data
+
+
+There were 4 notes
+
+GROMACS reminds you: "Wild Pointers Couldn't Drag Me Away" (K.A. Feenstra)
+
+turning H bonds into constraints...
+turning H bonds into constraints...
+turning H bonds into constraints...
+Analysing residue names:
+There are:  1500      Other residues
+There are:   500        Ion residues
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+Determining Verlet buffer for a tolerance of 5e-06 kJ/mol/ps at 283.718 K
+Calculated rlist for 1x1 atom pair-list as 1.091 nm, buffer size 0.091 nm
+Set rlist, assuming 4x4 atom pair-list, to 1.067 nm, buffer size 0.067 nm
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 48x48x48, spacing 0.119 0.119 0.119
+                      :-) GROMACS - gmx mdrun, 2016.5 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2016.5
+Executable:   /gpfsnyu/packages/gromacs/gnu/2016.5/bin/gmx
+Data prefix:  /gpfsnyu/packages/gromacs/gnu/2016.5
+Working dir:  /tmp/xz3067_7923174
+Command line:
+  gmx mdrun -pin on -ntmpi 1 -ntomp 28 -deffnm nve
+
+
+NOTE: Error occurred during GPU detection:
+      CUDA driver version is insufficient for CUDA runtime version
+      Can not use GPU acceleration, will fall back to CPU kernels.
+
+
+Running on 1 node with total 28 cores, 28 logical cores, 0 compatible GPUs
+Hardware detected:
+  CPU info:
+    Vendor: Intel
+    Brand:  Intel(R) Xeon(R) Gold 6132 CPU @ 2.60GHz
+    SIMD instructions most likely to fit this hardware: AVX_512
+    SIMD instructions selected at GROMACS compile time: AVX2_256
+
+  Hardware topology: Full, with devices
+
+Compiled SIMD instructions: AVX2_256, GROMACS could use AVX_512 on this machine, which is better.
+
+Reading file nve.tpr, VERSION 2016.5 (single precision)
+Can not increase nstlist because an NVE ensemble is used
+Using 1 MPI thread
+Using 28 OpenMP threads 
+
+
+NOTE: You requested 28 OpenMP threads, whereas we expect the optimum to be with more MPI ranks with 1 to 6 OpenMP threads.
+
+
+WARNING: This run will generate roughly 616981 Mb of data
+
+starting mdrun 'Neat CHOL Cl UREA'
+10000000 steps,  20000.0 ps.
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2016.5
+Source file: src/gromacs/mdlib/mdoutf.cpp (line 406)
+
+Fatal error:
+XTC error - maybe you are out of disk space?
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------

@@ -1,0 +1,19 @@
+##### This is the final project: a deep Eutectic Solvent system (choline chloride and urea) in different temperature H-bonds behavers######
+1. system:
+choline chloride and urea = 1 : 2
+2. Each folders:
+    0_DES: include all intial molecule gro file from thr paper:J. Phys. Chem. B 2018, 
+           122(43):9982-9993. Specific parameters for the DES system can see the website "https://github.com/orlandoacevedo/DES".
+    0_MD_pre: the MD preparation steps input file we can get from this floder.
+    1_NPT: include the NPT result in four temperature range;
+    2_NVE{i}: include the NVE result to get the average Box size to run the NVT and NVE simualtion;
+    3_Analyse: include all RDF results calculated by Gromacs.
+    
+3. steps by steps
+  (1) 1_NPT
+  sbatch auto-submit-Gromacs-DES-chcl-urea-NPT.sh
+  (2) 2_NVE{i}
+  sbatch auto-submit-Gromacs-DES-chcl-urea-NPE.sh
+  (3) 3_Analyse
+  sbatch auto-submit-Gromacs-DES-chcl-urea-Analyse.sh
+  (4) Jupyter notebook

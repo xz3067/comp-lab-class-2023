@@ -1,0 +1,102 @@
+cp: 在"/gpfsnyu/xspace/projects/DES/ChCl_Urea/2_NVE1/T285/nvt.gro" 后缺少了要操作的目标文件
+Try 'cp --help' for more information.
+                      :-) GROMACS - gmx grompp, 2016.5 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2016.5
+Executable:   /gpfsnyu/packages/gromacs/gnu/2016.5/bin/gmx
+Data prefix:  /gpfsnyu/packages/gromacs/gnu/2016.5
+Working dir:  /tmp/xz3067_7923172
+Command line:
+  gmx grompp -f nve.mdp -c nvt.gro -p choline_cl_urea.top -o nve.tpr
+
+
+-------------------------------------------------------
+Program:     gmx grompp, version 2016.5
+Source file: src/gromacs/commandline/cmdlineparser.cpp (line 235)
+Function:    void gmx::CommandLineParser::parse(int*, char**)
+
+Error in user input:
+Invalid command-line options
+  In command-line option -c
+    File 'nvt.gro' does not exist or is not accessible.
+    The file could not be opened.
+      Reason: No such file or directory
+      (call to fopen() returned error code 2)
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+                      :-) GROMACS - gmx mdrun, 2016.5 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2016.5
+Executable:   /gpfsnyu/packages/gromacs/gnu/2016.5/bin/gmx
+Data prefix:  /gpfsnyu/packages/gromacs/gnu/2016.5
+Working dir:  /tmp/xz3067_7923172
+Command line:
+  gmx mdrun -pin on -ntmpi 1 -ntomp 28 -deffnm nve
+
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2016.5
+Source file: src/gromacs/options/options.cpp (line 258)
+Function:    void gmx::Options::finish()
+
+Error in user input:
+Invalid input values
+  In option s
+    Required option was not provided, and the default file 'topol' does not
+    exist or is not accessible.
+    The following extensions were tried to complete the file name:
+      .tpr
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+cp: 无法获取"nve.xtc" 的文件状态(stat): 没有那个文件或目录
+cp: 无法获取"nve.tpr" 的文件状态(stat): 没有那个文件或目录
